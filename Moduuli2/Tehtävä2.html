@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Moduuli 2 - Tehtävä 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <p>Moduuli 2 - Tehtävä 2</p>
+        <ol id="result"></ol>
+    </body>
+    <script>
+        'use strict';
+        let list = document.getElementById('result')
+        const count = prompt('Osallistujien määrä')
+        for(let i=0; i<count; i++){
+            let node = document.createElement('LI')
+            list.appendChild(node)
+            node.innerHTML = prompt('Anna osallistujan nimi')
+        }
+    </script>
+</html>

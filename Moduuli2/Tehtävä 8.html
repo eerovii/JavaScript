@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Moduuli 2 - Tehtävä 8</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <p>Moduuli 2 - Tehtävä 8</p>
+        <p id="result"></p>
+    </body>
+    <script>
+        'use strict';
+        const arr=['Aragorn', 'Gimli', 'Legolas', 'Frodo']
+        function concat(arr){
+            let val=''
+            for(let i of arr) val+=i
+            return val
+        }
+        document.getElementById('result').innerHTML = concat(arr)
+    </script>
+</html>

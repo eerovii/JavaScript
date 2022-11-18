@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Moduuli 2 - Tehtävä 4</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <p>Moduuli 2 - Tehtävä 4</p>
+        <ul id="result"></ul>
+    </body>
+    <script>
+        'use strict';
+        const arr=[]
+        do {
+            var val=parseInt(prompt('Anna numero'))
+            arr.push(isNaN(val)?0:val)
+        } while(!arr.includes(0))
+        arr.sort((a,b)=>{return b-a})
+        for(let i of arr)console.log(i)
+    </script>
+</html>
