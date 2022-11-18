@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tehtävä 7</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        Tehtävä 7
+        <br>
+        <p id="result"></p>
+    </body>
+
+    <script>
+        'use strict';
+
+        const dice = prompt('Give me the number of dices you wish to roll')
+        var sum = 0
+
+        for(let i=0; i<=dice; i++) sum += Math.floor(Math.random()*6)+1
+        document.getElementById('result').innerHTML = sum
+    </script>
+
+</html>

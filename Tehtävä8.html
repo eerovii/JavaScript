@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tehtävä 8</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        Tehtävä 8
+        <br>
+        <ul id="result"></ul>
+    </body>
+
+    <script>
+        'use strict';
+        let start = prompt('Give me the first year')
+        let end = prompt('Give me the last year')
+        const list = document.getElementById('result')
+
+        if(start>end) [start, end] = [end, start]
+
+        for(let i = start; i<=end; i++){
+            if(i%4==0 && i%100!=0 || i%100==0 && i%400==0){
+                let node = document.createElement('LI')
+                list.appendChild(node)
+                node.innerHTML = i
+            }
+        }
+    </script>
+
+</html>
